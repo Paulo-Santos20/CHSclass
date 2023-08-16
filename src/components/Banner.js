@@ -64,10 +64,10 @@ export const Banner = () => {
                   }
                 >
                   <span className="tagline">
-                    Associação Beneficente João Paulo II
+                    Treinamento - Associação Beneficente João Paulo II
                   </span>
                   <h1>
-                    {`Treinamento`}{" "}
+                    {``}{" "}
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
