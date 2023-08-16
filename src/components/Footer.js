@@ -1,9 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { MailchimpForm } from "./MailchimpForm";
 import logo from "../assets/img/logoCHS.png";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import linkedin from '../assets/img/nav-icon1.svg';
+import twitter from '../assets/img/twitter.png';
+import instagram from '../assets/img/nav-icon3.svg';
 
 export const Footer = () => {
   return (
@@ -16,9 +16,9 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+              <a href="https://www.linkedin.com/company/chs-cei-jo%C3%A3o-paulo-ii/" target="_blank"><img src={linkedin} alt="Icon" /></a>
+              <a href="https://twitter.com/ChsJoaopauloii" target="_blank"><img src={twitter} alt="Icon" /></a>
+              <a href="https://www.instagram.com/chsassociacaojoaopaulo2/" target="_blank"><img src={instagram} alt="Icon" /></a>
             </div>
             <p>© CHS Copyright 2023. All Rights Reserved</p>
           </Col>
