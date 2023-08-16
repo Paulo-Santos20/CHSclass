@@ -304,7 +304,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
-/************ Skills Css ************/
+/************ Treinadores Css ************/
 .skill {
   padding: 0 0 50px 0;
   position: relative;
@@ -334,6 +334,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skill-slider .item img {
   width: 50%;
+  border-radius: 8px;
   margin: 0 auto 15px auto;
 }
 .background-image-left {

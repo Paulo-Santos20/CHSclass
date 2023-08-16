@@ -1,6 +1,7 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import paulo from "../assets/img/paulo.jpg";
+import douglas from "../assets/img/douglas.png";
+import hilbert from "../assets/img/hilbert.png";
+import dalemberg from "../assets/img/dalemberg.png"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -38,19 +39,19 @@ export const Skills = () => {
                         <p>Equipe de treinamento CHS.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={paulo} alt="Image" />
                                 <h5>Paulo dos Santos</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={douglas} alt="Image" />
                                 <h5>Douglas Lima</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={hilbert} alt="Image" />
                                 <h5>Hilbert</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={dalemberg} alt="Image" />
                                 <h5>Dalemberg</h5>
                             </div>
                         </Carousel>
