@@ -55,7 +55,7 @@ export const NavBar = () => {
                 <a href="#"><img src={navIcon2} alt="" /></a>
                 <a href="#"><img src={navIcon3} alt="" /></a>
               </div>
-              <HashLink to='#connect'>
+              <HashLink to='#modulos'>
                 <button className="vvd"><span>Video Aulas</span></button>
               </HashLink>
             </span>
