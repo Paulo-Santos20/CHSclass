@@ -6,6 +6,7 @@ import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import ReactPlayer from "react-player";
 
 export const Projects = () => {
   const atendimento = [
@@ -79,6 +80,8 @@ export const Projects = () => {
                           {atendimento.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
+                          <ReactPlayer url='<https://www.youtube.com/watch?v=EZ0PjxkDZiY&ab_channel=PhonkByte>' />
+
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
