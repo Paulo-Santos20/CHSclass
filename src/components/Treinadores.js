@@ -1,6 +1,6 @@
 import paulo from "../assets/img/paulo.jpg";
-import douglas from "../assets/img/douglas.png";
-import hilbert from "../assets/img/hilbert.png";
+import douglas from "../assets/img/douglas.jpg";
+import hilbert from "../assets/img/hilbert.jpg";
 import dalemberg from "../assets/img/dalemberg.png"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';

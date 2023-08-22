@@ -308,6 +308,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background-image: url('./assets/img/footer-bg.png');
+
 }
 .skill-bx {
   background: #151515;
