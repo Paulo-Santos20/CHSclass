@@ -58,19 +58,28 @@ export const Projects = () => {
                         <Nav.Link eventKey="first">Recepção</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Enfermeiro/Tec. Enf</Nav.Link>
+                        <Nav.Link eventKey="second">Enfermeiro/Tec. Enfermagem</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="third">Centro Cirurgico</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="four">Tec. Radiologia</Nav.Link>
+                        <Nav.Link eventKey="four">Médico</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="five">Estoque</Nav.Link>
+                        <Nav.Link eventKey="five">Tec. Radiologia</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="six">Compras</Nav.Link>
+                        <Nav.Link eventKey="six">Estoque</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="seven">Compras</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="eight">Médico</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="nine">Regulação</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
