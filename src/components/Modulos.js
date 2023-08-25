@@ -12,14 +12,9 @@ export const Projects = () => {
   const atendimento = [
     {
       title: "Atendimento Urgência",
-      description: "Recepção",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Atendimento Ambulatorial",
-      description: "Recepção",
+      description: "Em breve",
       imgUrl: projImg2,
-    },
+    },    
   ];
 
   const pep = [
@@ -60,13 +55,22 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Atendimento</Nav.Link>
+                        <Nav.Link eventKey="first">Recepção</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">PEP</Nav.Link>
+                        <Nav.Link eventKey="second">Enfermeiro/Tec. Enf</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">SADT</Nav.Link>
+                        <Nav.Link eventKey="third">Centro Cirurgico</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="four">Tec. Radiologia</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="five">Estoque</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="six">Compras</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -76,12 +80,22 @@ export const Projects = () => {
                       }
                     >
                       <Tab.Pane eventKey="first">
-                        <Row>
+                        <Row>                        
+                          <ReactPlayer
+                            url="<https://www.youtube.com/watch?v=EZ0PjxkDZiY&ab_channel=PhonkByte>"
+                            controls
+                          />
+                          <ReactPlayer
+                            url="<https://www.youtube.com/watch?v=ZaYvwn9nBD4&ab_channel=Alura>"
+                            controls
+                          />
+                          <ReactPlayer
+                            url="<https://www.youtube.com/watch?v=1_27GyASuRg>"
+                            controls
+                          />
                           {atendimento.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
-                          <ReactPlayer url='<https://www.youtube.com/watch?v=EZ0PjxkDZiY&ab_channel=PhonkByte>' />
-
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
