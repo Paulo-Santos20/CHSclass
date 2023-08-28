@@ -14,7 +14,7 @@ export const Projects = () => {
       title: "Atendimento Urgência",
       description: "Em breve",
       imgUrl: projImg2,
-    },    
+    },
   ];
 
   const pep = [
@@ -58,7 +58,9 @@ export const Projects = () => {
                         <Nav.Link eventKey="first">Recepção</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Enfermeiro/Tec. Enfermagem</Nav.Link>
+                        <Nav.Link eventKey="second">
+                          Enfermeiro/Tec. Enfermagem
+                        </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="third">Centro Cirurgico</Nav.Link>
@@ -89,10 +91,10 @@ export const Projects = () => {
                       }
                     >
                       <Tab.Pane eventKey="first">
-                        <Row>                        
+                        <Row>
                           <ReactPlayer
                             url="<https://www.youtube.com/watch?v=EZ0PjxkDZiY&ab_channel=PhonkByte>"
-                            controls
+                            controls  style={{ marginBottom: '20px' }}
                           />
                           <ReactPlayer
                             url="<https://www.youtube.com/watch?v=ZaYvwn9nBD4&ab_channel=Alura>"
