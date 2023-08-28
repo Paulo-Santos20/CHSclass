@@ -59,17 +59,17 @@ export const Projects = () => {
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="second">
-                          Enfermeiro/Tec. Enfermagem
+                          Enfermagem
                         </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Centro Cirurgico</Nav.Link>
+                        <Nav.Link eventKey="third">Cirurgico</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="four">Médico</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="five">Tec. Radiologia</Nav.Link>
+                        <Nav.Link eventKey="five">Radiologia</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="six">Estoque</Nav.Link>
@@ -98,11 +98,11 @@ export const Projects = () => {
                           />
                           <ReactPlayer
                             url="<https://www.youtube.com/watch?v=ZaYvwn9nBD4&ab_channel=Alura>"
-                            controls
+                            controls style={{ marginBottom: '20px' }}
                           />
                           <ReactPlayer
                             url="<https://www.youtube.com/watch?v=1_27GyASuRg>"
-                            controls
+                            controls style={{ marginBottom: '20px' }}
                           />
                           {atendimento.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;

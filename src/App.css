@@ -241,12 +241,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
-
-/************ Banner Css ************/
 .logo-img {
   width: 300px; /* Ajuste o tamanho conforme necessário */
   height: auto; /* Mantém a proporção original da imagem */
 }
+
+/************ Banner Css ************/
+
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
@@ -369,7 +370,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: #245c7c;
 }
 .project h2 {
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 700;
   text-align: center;
 }
@@ -385,7 +386,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .nav.nav-pills {
   width: 100%;
   margin: 0 auto;
-  border-radius: 80px;
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.623);
   overflow: hidden;  
 }
@@ -423,7 +424,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 55px 0px 0px 0px;  
 }
 .nav-link[id^="projects-tabs-tab-"] {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -439,7 +439,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .nav-link#projects-tabs-tab-five {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0px 80px 0px 0px;
 }
 .nav-link#projects-tabs-tab-six {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -661,4 +660,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: white;
   letter-spacing: 1.5px;
   margin-top: 20px;
+}
+
+
+/*********** Responsive Modulos ****************/
+@media (max-width: 1024px) {
+  .proj-imgbx {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .project .nav.nav-pills .nav-link {
+    font-size: 12px; /* Diminui o tamanho da fonte */
+    letter-spacing: 0.1px; /* Diminui o espaçamento entre as letras */
+  } 
 }
