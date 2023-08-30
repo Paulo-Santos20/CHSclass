@@ -1,4 +1,5 @@
 import paulo from "../assets/img/paulo.jpg";
+import alessandro from "../assets/img/alessandro.jpg"
 import douglas from "../assets/img/douglas.jpg";
 import hilbert from "../assets/img/hilbert.jpg";
 import dalemberg from "../assets/img/dalemberg.png"
@@ -38,6 +39,10 @@ export const Skills = () => {
                         <h2>Implantadores</h2>
                         <p>Equipe de treinamento CHS.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                        <div className="item">
+                                <img src={alessandro} alt="Image" />
+                                <h5>Alessandro Mauro</h5>
+                            </div>
                             <div className="item">
                                 <img src={paulo} alt="Image" />
                                 <h5>Paulo dos Santos</h5>
