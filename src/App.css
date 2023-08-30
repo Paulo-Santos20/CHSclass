@@ -325,7 +325,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
-  background-color: #245c7c; 
+  background-color: #245c7c;
 }
 .skill-bx {
   background: #151515;
@@ -388,7 +388,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.623);
-  overflow: hidden;  
+  overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
   width: 20%;
@@ -430,7 +430,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .nav-link#projects-tabs-tab-second {
   border: 1px solid rgba(255, 255, 255, 0.5);
-}  
+}
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -511,7 +511,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact {
   padding: 100px 0 160px 0;
   background-color: #245c7c;
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -535,7 +535,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 18px 0px;
   font-weight: 500;
   font-size: 18px;
-  letter-spacing: 0.8px;
+  letter-spacing: 1.8px;
   transition: 0.3s ease-in-out;
 }
 .contact form input:focus,
@@ -624,9 +624,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-
-
-
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
@@ -687,7 +684,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 15px;
 }
 .new-email-bx button {
-  background: linear-gradient(90.21deg, #e2ce18 , #13567c );
+  background: linear-gradient(90.21deg, #e2ce18, #13567c);
   padding: 20px 65px;
   color: #fff;
   font-weight: 500;
@@ -705,7 +702,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 
-
 /*********** Responsive Modulos ****************/
 @media (max-width: 1024px) {
   .proj-imgbx {
@@ -714,12 +710,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
+@media (max-width: 728px) {
+  form{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 425px) {
   .project .nav.nav-pills .nav-link {
     font-size: 12px; /* Diminui o tamanho da fonte */
     letter-spacing: 0.1px; /* Diminui o espaçamento entre as letras */
-  } 
+  }
 }
-
-
-

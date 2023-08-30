@@ -45,10 +45,8 @@ const Contact = () => {
     }
   }, [showSuccessMessage]);
 
-
   return (
     <div className="contact" id="connect">
-      <img src={contactImg} alt="Contact" />
       <form ref={form} onSubmit={sendEmail}>
         <h2>Solicite seu treinamento Ao Vivo</h2>
         <Row>
@@ -67,11 +65,10 @@ const Contact = () => {
         </Row>
 
         <Row>
-          <label></label>
-          <Col size={12} className="px-1">
-            <textarea rows="6" name="message" placeholder="Mensagem" />
-          </Col>
+          <label></label>          
+            <textarea rows="6" name="message" placeholder="Mensagem" />          
         </Row>
+        
         <input type="submit" value="Enviar" />
       </form>
       {showSuccessMessage && (
