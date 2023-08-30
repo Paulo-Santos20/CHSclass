@@ -8,6 +8,8 @@ import { Projects } from "./components/Modulos";
 import { Footer } from "./components/Footer";
 import React, {useEffect } from 'react';
 import { Newsletter } from './components/Newsletter';
+import Contact from "./components/contact";
+
 
 function App() {
   useEffect(() =>{
@@ -22,6 +24,7 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
+      <Contact />
       <Footer />
     </div>
   );
