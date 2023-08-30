@@ -5,17 +5,23 @@ import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import { Skills } from "./components/Treinadores";
 import { Projects } from "./components/Modulos";
-import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import React, {useEffect } from 'react';
+import { Newsletter } from './components/Newsletter';
 
 function App() {
+  useEffect(() =>{
+    fetch("/api")
+    .then((res) => res.json())
+    .then((data) => {console.log(data)})
+  }, [])
+  
   return (
     <div className="App">
       <NavBar />
       <Banner />
       <Skills />
       <Projects />
-      <Contact />
       <Footer />
     </div>
   );
