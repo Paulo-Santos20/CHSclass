@@ -53,11 +53,11 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={hilbert} alt="Image" />
-                                <h5>Hilbert</h5>
+                                <h5>Hilbert Dias</h5>
                             </div>
                             <div className="item">
                                 <img src={dalemberg} alt="Image" />
-                                <h5>Dalemberg</h5>
+                                <h5>Dalemberg Rougs</h5>                                
                             </div>
                         </Carousel>
                     </div>
