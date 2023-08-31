@@ -1,46 +1,41 @@
+import "../App.css";
 import { useState, useEffect } from "react";
-import { Col, Row, Alert } from "react-bootstrap";
+import styled from "styled-components";
+import firebase from "firebase/compat/app";
+import db from "../firebase";
 
-export const Newsletter = ({ status, message, onValidated }) => {
-  const [email, setEmail] = useState('');
-
-  useEffect(() => {
-    if (status === 'success') clearFields();
-  }, [status])
-
-  const handleSubmit = (e) => {
+function Newsletter() {
+  const [input, setInput] = useState("");
+  const inputHandler = (e) => {
+    setInput(e.target.value);
+  };
+  const submitHandler = (e) => {
     e.preventDefault();
-    email &&
-    email.indexOf("@") > -1 &&
-    onValidated({
-      EMAIL: email
-    })
-  }
-
-  const clearFields = () => {
-    setEmail('');
-  }
-
+    if (input) {
+      console.log(input);
+      //add to firebase
+      db.collection("emails").add({
+        email: input,
+        time: firebase.firestore.FieldValue.serverTimestamp(),
+      });
+    }
+  };
   return (
-      <Col lg={12}>
-        <div className="newsletter-bx wow slideInUp">
-          <Row>
-            <Col lg={12} md={6} xl={5}>
-            <h3>Inscreva-se para saber sobre os proximos cursos</h3>
-              {status === 'sending' && <Alert>Enviando...</Alert>}
-              {status === 'error' && <Alert variant="danger">{message}</Alert>}
-              {status === 'success' && <Alert variant="success">{message}</Alert>}
-            </Col>
-            <Col md={6} xl={7}>
-              <form onSubmit={handleSubmit}>
-                <div className="new-email-bx">
-                  <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Endereço de email" />
-                  <button type="submit">Enviar</button>
-                </div>
-              </form>
-            </Col>
-          </Row>
-        </div>
-      </Col>
-  )
+      <div className="newsletter">
+        <Form onSubmit={submitHandler}>
+          <h3> Increva-se para sabe sobre os próximos cursos</h3>
+          <input
+            type="email"
+            placeholder="Endereço de email"
+            className="new-email-bx"
+            onChange={inputHandler}
+          />
+          <button type="submit" className="new-email-button">
+            Enviar
+          </button>
+        </Form>
+      </div>
+  );
 }
+const Form = styled.form``;
+export default Newsletter;
