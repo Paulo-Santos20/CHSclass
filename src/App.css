@@ -45,6 +45,7 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
+  color: white;
 }
 
 p,
@@ -514,13 +515,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.contact img {
-  width: 30%;
-  margin-right: 50px;
+  width: 100%;
 }
 .contact h2 {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 60px;
 }
@@ -529,14 +527,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
+  border-radius: 8px;
   color: #fff;
   margin: 0 0 10px 0;
   padding: 18px 0px;
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 1.8px;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;  
 }
 .contact form input:focus,
 .contact form textarea:focus {
@@ -638,7 +636,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	max-width: 100%;
 	position: relative;
   padding: 50px;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50px;
   color: black;
   margin-bottom: 20px;
@@ -665,8 +663,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   border-radius: 15px;
 }
-
-
 .footer img {
   width: 26%;
 }

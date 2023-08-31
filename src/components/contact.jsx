@@ -48,7 +48,7 @@ const Contact = () => {
   return (
     <div className="contact" id="connect">
       <form ref={form} onSubmit={sendEmail} className="form-contact">
-        <h3>Solicite seu treinamento Ao Vivo</h3>
+        <h2>Solicite seu treinamento Ao Vivo</h2>
         <Row>
           <label></label>
           <input type="text" placeholder="Nome" name="user_name" />
