@@ -23,7 +23,7 @@ function Newsletter() {
   return (
       <div className="newsletter">
         <Form onSubmit={submitHandler}>
-          <h3> Increva-se para sabe sobre os próximos cursos</h3>
+          <h3> Increva-se para saber sobre os próximos cursos</h3>
           <input
             type="email"
             placeholder="Endereço de email"
