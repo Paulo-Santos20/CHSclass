@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import logo from "../assets/img/logoCHS.png";
 import linkedin from '../assets/img/nav-icon1.svg';
 import twitter from '../assets/img/twitter.png';
 import instagram from '../assets/img/nav-icon3.svg';
@@ -12,7 +11,6 @@ export const Footer = () => {
         <Row className="align-items-center">
           <Newsletter />
           <Col size={12} sm={6}>
-            <img src={logo} alt="Logo"/>
             <p>Entre em Contato</p>
             <p>(81) 9.9423 - 2513</p>
           </Col>
