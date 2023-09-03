@@ -1,53 +1,61 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/Logo_branco.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import headerImg from "../assets/img/Logo_branco.png";
 
 export const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
   const toRotate = ["Hospitalar", "Humanizado", "CHS"];
   const period = 2000;
 
+  const [state, setState] = useState({
+    loopNum: 0,
+    isDeleting: false,
+    text: "",
+    delta: 300 - Math.random() * 100,
+    index: 1,
+  });
+
   useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
+    let ticker = setInterval(tick, state.delta);
 
     return () => {
       clearInterval(ticker);
     };
-  }, [text]);
+  }, [state.text]);
+
+  const updateState = (newState) => {
+    setState((prevState) => ({
+      ...prevState,
+      ...newState,
+    }));
+  };
 
   const tick = () => {
-    let i = loopNum % toRotate.length;
+    let i = state.loopNum % toRotate.length;
     let fullText = toRotate[i];
-    let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
+    let updatedText = state.isDeleting
+      ? fullText.substring(0, state.text.length - 1)
+      : fullText.substring(0, state.text.length + 1);
 
-    setText(updatedText);
+    updateState({ text: updatedText });
 
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
+    if (state.isDeleting) {
+      updateState({ delta: state.delta / 2 });
     }
 
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex((prevIndex) => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === "") {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(500);
+    if (!state.isDeleting && updatedText === fullText) {
+      updateState({ isDeleting: true, index: state.index - 1, delta: period });
+    } else if (state.isDeleting && updatedText === "") {
+      updateState({
+        isDeleting: false,
+        loopNum: state.loopNum + 1,
+        index: 1,
+        delta: 500,
+      });
     } else {
-      setIndex((prevIndex) => prevIndex + 1);
+      updateState({ index: state.index + 1 });
     }
   };
 
@@ -67,13 +75,12 @@ export const Banner = () => {
                     Treinamento - Associação Beneficente João Paulo II
                   </span>
                   <h1>
-                    {``}{" "}
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
                       data-rotate='[ "Hospitalar", "Humanizado", "CHS" ]'
                     >
-                      <span className="wrap">{text}</span>
+                      <span className="wrap">{state.text}</span>
                     </span>
                   </h1>
                   <p>
@@ -85,7 +92,7 @@ export const Banner = () => {
                     funcionalidades do sistema Wareline de maneira eficaz e
                     envolvente.
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  <button onClick={() => console.log("conectar")}>
                     Video - Aulas <ArrowRightCircle size={25} />
                   </button>
                 </div>
@@ -100,7 +107,7 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                 >
-                  <img src={headerImg} alt="Header Img" />
+                  <img src={headerImg} alt="Imagem de Cabeçalho" />
                 </div>
               )}
             </TrackVisibility>
