@@ -12,10 +12,12 @@ app.listen(5000, () => console.log("Server Running"));
 
 
 const contactEmail = nodemailer.createTransport({
-  service: 'gmail',
+  service: 'https://ceijoaopauloii.org.br',
+  port: 2096,
+  scure:true,
   auth: {
-    user: "crossbrasil2020@gmail.com",
-    pass: "cpeomfjcanwtualo"
+    user: "pcardoso@ceijoaopauloii.org.br",
+    pass: "chs_sucesso@2022"
   },
 });
 
@@ -34,8 +36,8 @@ router.post("/contact", (req, res) => {
   const phone = req.body.phone;
   const mail = {
     from: name,
-    to: "crossbrasil2020@gmail.com",
-    subject: "Contato - Site",
+    to: "pcardoso@ceijoaopauloii.org.br",
+    subject: "Contato do Site",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
            <p>Phone: ${phone}</p>
