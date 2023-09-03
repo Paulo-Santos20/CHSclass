@@ -81,7 +81,7 @@ export const Projects = () => {
                       <Nav.Item>
                         <Nav.Link eventKey="nine">Regulação</Nav.Link>
                       </Nav.Item>
-                    </Nav>
+                      </Nav>
                     <Tab.Content
                       id="slideInUp"
                       className={
@@ -91,33 +91,42 @@ export const Projects = () => {
                       <Tab.Pane eventKey="first">
                         <Row>
                           <ReactPlayer
-                            url="<https://www.youtube.com/watch?v=EZ0PjxkDZiY&ab_channel=PhonkByte>"
-                            controls  style={{ marginBottom: '20px' }}
+                            url="https://www.youtube.com/watch?v=EZ0PjxkDZiY&ab_channel=PhonkByte"
+                            controls
+                            style={{ marginBottom: "20px" }}
                           />
                           <ReactPlayer
-                            url="<https://www.youtube.com/watch?v=ZaYvwn9nBD4&ab_channel=Alura>"
-                            controls style={{ marginBottom: '20px' }}
+                            url="https://www.youtube.com/watch?v=ZaYvwn9nBD4&ab_channel=Alura"
+                            controls
+                            style={{ marginBottom: "20px" }}
                           />
                           <ReactPlayer
-                            url="<https://www.youtube.com/watch?v=1_27GyASuRg>"
-                            controls style={{ marginBottom: '20px' }}
+                            url="https://www.youtube.com/watch?v=1_27GyASuRg"
+                            controls
+                            style={{ marginBottom: "20px" }}
                           />
                           {atendimento.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
+                            return (
+                              <ProjectCard key={index} {...project} />
+                            );
                           })}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <Row>
                           {pep.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
+                            return (
+                              <ProjectCard key={index} {...project} />
+                            );
                           })}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <Row>
                           {sadt.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
+                            return (
+                              <ProjectCard key={index} {...project} />
+                            );
                           })}
                         </Row>
                       </Tab.Pane>
