@@ -110,9 +110,7 @@ export const Projects = () => {
                             playsinline
                             preload="metadata"
                           />
-                          {atendimento.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
+                         
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
