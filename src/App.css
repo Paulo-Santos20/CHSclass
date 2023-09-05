@@ -688,6 +688,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     top: 125px;
     right: 28px; 
   }
+  .form-contact{
+    width: 80%;
+}
 }
 
 @media (max-width: 425px) {
@@ -706,7 +709,5 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     top: 147px;
     right: 28px; 
   }
-  .form-contact{
-    width: 80%;
-}
+ 
 }
