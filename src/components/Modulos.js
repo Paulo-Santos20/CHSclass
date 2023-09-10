@@ -73,12 +73,9 @@ export const Projects = () => {
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="seven">Compras</Nav.Link>
-                      </Nav.Item>
+                      </Nav.Item>                      
                       <Nav.Item>
-                        <Nav.Link eventKey="eight">Médico</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="nine">Regulação</Nav.Link>
+                        <Nav.Link eventKey="eight">Regulação</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -95,22 +92,17 @@ export const Projects = () => {
                             style={{ marginBottom: "20px" }}
                             playsinline
                             preload="metadata"
-                          />
-                          <ReactPlayer
-                            url="https://www.youtube.com/watch?v=ZaYvwn9nBD4&ab_channel=Alura"
-                            controls
-                            style={{ marginBottom: "20px" }}
-                            playsinline
-                            preload="metadata"
-                          />
+                          />                         
                           <ReactPlayer
                             url="https://www.youtube.com/watch?v=1_27GyASuRg"
                             controls
                             style={{ marginBottom: "20px" }}
                             playsinline
                             preload="metadata"
-                          />
-                         
+                          />                        
+                         {/*atendimento.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })*/}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
@@ -126,6 +118,16 @@ export const Projects = () => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="four">
+                        
+ <ReactPlayer
+                            url="https://www.youtube.com/watch?v=8JUkj7yWSkA"
+                            controls
+                            style={{ marginBottom: "20px" }}
+                            playsinline
+                            preload="metadata"
+                          /> 
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
