@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+require('dotenv').config();
 
 // server used to send send emails
 const app = express();
@@ -16,8 +17,8 @@ const contactEmail = nodemailer.createTransport({
   port: 2096,
   scure:true,
   auth: {
-    user: "pcardoso@ceijoaopauloii.org.br",
-    pass: "chs_sucesso@2022"
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 });
 
