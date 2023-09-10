@@ -6,6 +6,9 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 import ReactPlayer from "react-player";
 import React from "react";
+import { Link } from 'react-router-dom';
+
+
 
 export const Projects = () => {
   const atendimento = [
@@ -21,6 +24,7 @@ export const Projects = () => {
       title: "Evolução Médica",
       description: "Consultório",
       imgUrl: projImg2,
+      
     },
   ];
 
@@ -73,7 +77,7 @@ export const Projects = () => {
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="seven">Compras</Nav.Link>
-                      </Nav.Item>                      
+                      </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="eight">Regulação</Nav.Link>
                       </Nav.Item>
@@ -92,15 +96,16 @@ export const Projects = () => {
                             style={{ marginBottom: "20px" }}
                             playsinline
                             preload="metadata"
-                          />                         
+                          />
                           <ReactPlayer
                             url="https://www.youtube.com/watch?v=1_27GyASuRg"
                             controls
                             style={{ marginBottom: "20px" }}
                             playsinline
                             preload="metadata"
-                          />                        
-                         {/*atendimento.map((project, index) => {
+                          />
+                          
+                          {/*atendimento.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })*/}
                         </Row>
@@ -109,6 +114,7 @@ export const Projects = () => {
                         <Row>
                           {pep.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
+                            
                           })}
                         </Row>
                       </Tab.Pane>
@@ -120,14 +126,13 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="four">
-                        
- <ReactPlayer
-                            url="https://www.youtube.com/watch?v=8JUkj7yWSkA"
-                            controls
-                            style={{ marginBottom: "20px" }}
-                            playsinline
-                            preload="metadata"
-                          /> 
+                        <ReactPlayer
+                          url="https://www.youtube.com/watch?v=8JUkj7yWSkA"
+                          controls
+                          style={{ marginBottom: "20px" }}
+                          playsinline
+                          preload="metadata"
+                        />                       
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

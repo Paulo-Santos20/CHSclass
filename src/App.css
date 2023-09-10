@@ -379,7 +379,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #b8b8b8;
   font-size: 18px;
   letter-spacing: 0.8px;
-  line-height: 1.5em;
+  line-height: 1em;
   margin: 14px auto 30px auto;
   text-align: center;
   width: 56%;
@@ -507,6 +507,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+
+
 
 /************ Contact Css ************/
 .contact {
@@ -702,6 +704,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     top: 120px;
     right: 28px; 
   }
+  .project .nav.nav-pills .nav-item {
+    width: 33.33%;
+  }
 }
 
 @media (max-width: 375px) {
@@ -711,3 +716,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
  
 }
+
