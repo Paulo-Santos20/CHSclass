@@ -508,7 +508,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-
+.video-container {
+  width: 33.33%;
+  height: 240px;
+  margin-bottom: 20px;
+}
 
 /************ Contact Css ************/
 .contact {

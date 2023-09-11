@@ -5,10 +5,8 @@ import projImg3 from "../assets/img/project-img3.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import ReactPlayer from "react-player";
-import React from "react";
-import { Link } from 'react-router-dom';
-
-
+import React, { useState } from 'react';
+import "./Modulos.css";
 
 export const Projects = () => {
   const atendimento = [
@@ -24,7 +22,6 @@ export const Projects = () => {
       title: "Evolução Médica",
       description: "Consultório",
       imgUrl: projImg2,
-      
     },
   ];
 
@@ -35,7 +32,13 @@ export const Projects = () => {
       imgUrl: projImg3,
     },
   ];
-
+  function MeuComponente() {
+    const [videoLoaded, setVideoLoaded] = useState(false);
+  
+    const toggleVideo = () => {
+      setVideoLoaded(!videoLoaded);
+    };
+  }
   return (
     <section className="project" id="modulos">
       <Container>
@@ -90,31 +93,47 @@ export const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          <ReactPlayer
-                            url="https://www.youtube.com/watch?v=EZ0PjxkDZiY&ab_channel=PhonkByte"
-                            controls
-                            style={{ marginBottom: "20px" }}
-                            playsinline
-                            preload="metadata"
-                          />
-                          <ReactPlayer
-                            url="https://www.youtube.com/watch?v=1_27GyASuRg"
-                            controls
-                            style={{ marginBottom: "20px" }}
-                            playsinline
-                            preload="metadata"
-                          />
-                          
+                        <div className="video-container">
+                            <ReactPlayer
+                              url="https://www.youtube.com/watch?v=EZ0PjxkDZiY&ab_channel=PhonkByte"
+                              controls
+                              width="100%"
+                              height="100%"
+                              playsinline
+                              preload="metadata"
+                            />
+                          </div>
+                          <div className="video-container">
+                            <ReactPlayer
+                              url="https://www.youtube.com/watch?v=EZ0PjxkDZiY&ab_channel=PhonkByte"
+                              controls
+                              width="100%"
+                              height="100%"
+                              playsinline
+                              preload="metadata"
+                            />
+                          </div>
+                          <div className="video-container">
+                            <ReactPlayer
+                              url="https://www.youtube.com/watch?v=1_27GyASuRg"
+                              controls
+                              width="100%"
+                              height="100%"
+                              playsinline
+                              preload="metadata"
+                            />
+                          </div>
+
                           {/*atendimento.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })*/}
                         </Row>
                       </Tab.Pane>
+
                       <Tab.Pane eventKey="second">
                         <Row>
                           {pep.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
-                            
                           })}
                         </Row>
                       </Tab.Pane>
@@ -126,13 +145,18 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="four">
-                        <ReactPlayer
-                          url="https://www.youtube.com/watch?v=8JUkj7yWSkA"
-                          controls
-                          style={{ marginBottom: "20px" }}
-                          playsinline
-                          preload="metadata"
-                        />                       
+                        <Row>
+                        <div className="video-container">
+                            <ReactPlayer
+                              url="https://www.youtube.com/watch?v=8JUkj7yWSkA"
+                              controls
+                              width="100%"
+                              height="100%"
+                              playsinline
+                              preload="metadata"
+                            />
+                          </div>
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
