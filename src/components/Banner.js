@@ -4,6 +4,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import headerImg from "../assets/img/Logo_branco.png";
+import { Link } from 'react-scroll';
 
 export const Banner = () => {
   const toRotate = ["Hospitalar", "Humanizado", "CHS"];
@@ -92,8 +93,10 @@ export const Banner = () => {
                     funcionalidades do sistema Wareline de maneira eficaz e
                     envolvente.
                   </p>
-                  <button onClick={() => console.log("conectar")}>
-                    Video - Aulas <ArrowRightCircle size={25} />
+                  <button>
+                    <Link to="modulos" smooth={true} duration={500}>
+                      Video - Aulas <ArrowRightCircle size={25} />
+                    </Link>
                   </button>
                 </div>
               )}

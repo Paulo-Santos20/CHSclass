@@ -95,7 +95,7 @@ export const Projects = () => {
                         <Row>
                         <div className="video-container">
                             <ReactPlayer
-                              url="https://www.youtube.com/watch?v=EZ0PjxkDZiY&ab_channel=PhonkByte"
+                              url="https://www.youtube.com/watch?v=8JUkj7yWSkA"
                               controls
                               width="100%"
                               height="100%"
@@ -105,7 +105,7 @@ export const Projects = () => {
                           </div>
                           <div className="video-container">
                             <ReactPlayer
-                              url="https://www.youtube.com/watch?v=EZ0PjxkDZiY&ab_channel=PhonkByte"
+                              url="https://www.youtube.com/watch?v=8JUkj7yWSkA"
                               controls
                               width="100%"
                               height="100%"
@@ -115,7 +115,7 @@ export const Projects = () => {
                           </div>
                           <div className="video-container">
                             <ReactPlayer
-                              url="https://www.youtube.com/watch?v=1_27GyASuRg"
+                              url="https://www.youtube.com/watch?v=8JUkj7yWSkA"
                               controls
                               width="100%"
                               height="100%"
